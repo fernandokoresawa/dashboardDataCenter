@@ -26,15 +26,17 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $historicos = Historico::all();
+        // $historicos = Historico::all();
 
-        $corrente = Sensor::find(1);
-        $tensao = Sensor::find(2);
-        $temperatura = Sensor::find(3);
-        $umidade = Sensor::find(4);
-        $gas = Sensor::find(5);
+        // $corrente = Sensor::find(1);
+        // $tensao = Sensor::find(2);
+        // $temperatura = Sensor::find(3);
+        // $umidade = Sensor::find(4);
+        // $gas = Sensor::find(5);
 
-        return view('layouts.logado', compact('historicos', 'corrente', 'tensao', 'temperatura', 'umidade', 'gas'));
+        // return view('tabela.index', compact('historicos', 'corrente', 'tensao', 'temperatura', 'umidade', 'gas'));
+
+        return view('home');
     }
 
     public function notificacoes()

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Historico;
+use App\Sensor;
 
 class HistoricoController extends Controller
 {
@@ -16,10 +17,20 @@ class HistoricoController extends Controller
     public function index()
     {
         //pegar os dados do banco
-        $historicos = Historico::all();
+        //$historicos = Historico::all();
 
         //mostrar na tela
-        return view('tabela.index', compact('historicos'));
+        //return view('tabela.index', compact('historicos'));
+
+        $historicos = Historico::all();
+
+        $corrente = Sensor::find(1);
+        $tensao = Sensor::find(2);
+        $temperatura = Sensor::find(3);
+        $umidade = Sensor::find(4);
+        $gas = Sensor::find(5);
+
+        return view('tabela.index', compact('historicos', 'corrente', 'tensao', 'temperatura', 'umidade', 'gas'));
     }
 
     /**
