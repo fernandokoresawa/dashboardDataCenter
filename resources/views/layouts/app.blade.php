@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>
-            Argon Dashboard - Free Dashboard for Bootstrap 4 by Creative Tim
+            Datacenter - RealTime
         </title>
 
         <link href="{{ asset('assets/img/brand/favicon.png') }}" rel="icon" type="image/png">
@@ -19,7 +19,7 @@
     </head>
 
     <body class="">
-        <nav class="navbar navbar-vertical fixed-left navbar-expand-md navbar-light bg-white" id="sidenav-main">
+        <nav class="navbar navbar-vertical fixed-left navbar-expand-md navbar-light bg-white" id="laptop-main">
             <div class="container-fluid">
                 <!-- Toggler -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidenav-collapse-main" aria-controls="sidenav-main" aria-expanded="false" aria-label="Toggle navigation">
@@ -105,12 +105,17 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="{{route('tabela')}}">
-                                <i class="ni ni-planet text-blue"></i> Tabelas
+                                <i class="ni ni-bullet-list-67 text-red"></i> Tabelas
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./examples/login.html">
+                                <i class="ni ni-bell-55 text-info"></i> Alertas
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="{{route('home')}}">
-                                <i class="ni ni-pin-3 text-orange"></i> Shutdown
+                                <i class="ni ni-button-power text-orange"></i> Shutdown
                             </a>
                         </li>
                         <!-- <li class="nav-item">
@@ -156,7 +161,7 @@
                                         <img alt="Image placeholder" src="./assets/img/theme/team-4-800x800.jpg">
                                     </span>
                                     <div class="media-body ml-2 d-none d-lg-block">
-                                        <span class="mb-0 text-sm  font-weight-bold">Yasmin Uchôa</span>
+                                        <span class="mb-0 text-sm  font-weight-bold">Bem vindo ao Datacenter RealTime,</span>
                                     </div>
                                 </div>
                             </a>
